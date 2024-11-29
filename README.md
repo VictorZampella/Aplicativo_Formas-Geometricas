@@ -1,4 +1,4 @@
-# 📐 FormasProibidas
+# 📐 All the Forms
 
 **All the Forms** é um aplicativo educacional e funcional que permite calcular as áreas de diversas formas geométricas. Ideal para estudantes e profissionais que necessitam de um recurso rápido e eficiente.
 

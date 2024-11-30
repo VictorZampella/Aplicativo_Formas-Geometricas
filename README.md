@@ -26,6 +26,27 @@ Pré-visualização: Componentes otimizados usando Jetpack Compose.
 - **Navegação**: Jetpack Navigation (NavController)
 - **Estilo e Tema**: Tema personalizado com FormasProibidasTheme
 ---
+---
+
+## 🖼️ Prévia do Aplicativo
+
+Veja abaixo como é a interface do **All the Forms**:
+
+![tela splash](https://github.com/user-attachments/assets/2fb21661-f840-4f93-baa8-4f7f4e4e5e78)
+
+### Telas do Aplicativo
+
+#### Tela Inicial
+![Tela Inicial](assets/tela_inicial.png)
+
+#### Cálculo de Área do Triângulo
+![Área do Triângulo](assets/area_triangulo.png)
+
+#### Cálculo de Área do Círculo
+![Área do Círculo](assets/area_circulo.png)
+
+---
+
 
 ## 🤝 Contribuições
 

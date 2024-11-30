@@ -32,7 +32,8 @@ Pré-visualização: Componentes otimizados usando Jetpack Compose.
 
 Veja abaixo como é a interface do **All the Forms**:
 
-![tela splash](https://github.com/user-attachments/assets/2fb21661-f840-4f93-baa8-4f7f4e4e5e78)
+<img src="[assets/tela_inicial.pn![tela splash](https://github.com/user-attachments/assets/5a6bde46-809f-4a11-abd3-ceb6561a8e27)
+g](https://github.com/user-attachments/assets/b05bbece-8cae-4d84-b70e-f7507f35faf4)" alt="Tela Inicial" width="300">
 
 ### Telas do Aplicativo
 

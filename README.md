@@ -28,23 +28,58 @@ Pré-visualização: Componentes otimizados usando Jetpack Compose.
 ---
 ---
 
+---
+
+---
+
+---
+
 ## 🖼️ Prévia do Aplicativo
 
-Veja abaixo como é a interface do **All the Forms**:
+### Tela Splash
 
-<img src="[assets/tela_inicial.pn![tela splash](https://github.com/user-attachments/assets/5a6bde46-809f-4a11-abd3-ceb6561a8e27)
-g](https://github.com/user-attachments/assets/b05bbece-8cae-4d84-b70e-f7507f35faf4)" alt="Tela Inicial" width="300">
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/712668e6-3d48-4936-aaf1-cf20ae7af166" alt="Tela Splash" width="300">
+  <p><strong>Tela Splash</strong></p>
+</div>
 
-### Telas do Aplicativo
+---
 
-#### Tela Inicial
-![Tela Inicial](assets/tela_inicial.png)
+## 🖼️ Telas de Cadastro
 
-#### Cálculo de Área do Triângulo
-![Área do Triângulo](assets/area_triangulo.png)
+### Tela de Cadastro e Cadastro Feito
 
-#### Cálculo de Área do Círculo
-![Área do Círculo](assets/area_circulo.png)
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8491a964-d598-4a37-93d3-d3c0a561581c" alt="Tela de Cadastro" width="300">
+      <p><strong>Tela de Cadastro</strong></p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/8161f5b8-1f82-4a22-9015-cf4168e99eb9" alt="Tela de Cadastro Feito" width="300">
+      <p><strong>Tela de Cadastro Feito</strong></p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🖼️ Telas de Formas
+
+### Tela de Formas e Cálculo de Área do Cubóide
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/1eadba79-b39a-4128-9c38-85df489c1b25" alt="Tela das Formas" width="300">
+      <p><strong>Tela das Formas</strong></p>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/eaf30e09-bb07-451a-8b1b-4639013e98a0" alt="Tela Cálculo de Área do Cubóide" width="300">
+      <p><strong>Tela Cálculo de Área do Cubóide</strong></p>
+    </td>
+  </tr>
+</table>
 
 ---
 

@@ -76,7 +76,7 @@ Pré-visualização: Componentes otimizados usando Jetpack Compose.
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/1eadba79-b39a-4128-9c38-85df489c1b25" alt="Tela das Formas" width="300">
+      <img src="https://github.com/user-attachments/assets/5e5f0143-e7ec-4a36-bb29-bc3aea6b8294" alt="Tela das Formas" width="300">
       <p><strong>Tela das Formas</strong></p>
     </td>
     <td align="center">

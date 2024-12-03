@@ -39,9 +39,10 @@ Pré-visualização: Componentes otimizados usando Jetpack Compose.
 ### Tela Splash
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/712668e6-3d48-4936-aaf1-cf20ae7af166" alt="Tela Splash" width="300">
+  <img src="https://github.com/user-attachments/assets/71ada8a2-1314-4e95-af93-6485cbddf4e5" alt="Tela Splash" width="300">
   <p><strong>Tela Splash</strong></p>
 </div>
+
 
 ---
 

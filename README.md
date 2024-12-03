@@ -76,11 +76,11 @@ Pré-visualização: Componentes otimizados usando Jetpack Compose.
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/5e5f0143-e7ec-4a36-bb29-bc3aea6b8294" alt="Tela das Formas" width="300">
+      <img src="https://github.com/user-attachments/assets/5e5f0143-e7ec-4a36-bb29-bc3aea6b8294" alt="Tela das Formas" width="400">
       <p><strong>Tela das Formas</strong></p>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/3edae2a8-7d2b-45af-83e0-20f35f736bc6" alt="Tela Cálculo de Área do Cubóide" width="300">
+      <img src="https://github.com/user-attachments/assets/3edae2a8-7d2b-45af-83e0-20f35f736bc6" alt="Tela Cálculo de Área do Cubóide" width="400">
       <p><strong>Tela Cálculo de Área do Cubóide</strong></p>
     </td>
   </tr>

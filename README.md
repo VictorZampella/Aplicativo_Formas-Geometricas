@@ -56,13 +56,15 @@ Pré-visualização: Componentes otimizados usando Jetpack Compose.
       <p><strong>Tela de Cadastro</strong></p>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/8161f5b8-1f82-4a22-9015-cf4168e99eb9" alt="Tela de Cadastro Feito" width="300">
+      <img src="https://github.com/user-attachments/assets/e5837057-3031-4ed4-b1f1-7c88e9172d9a" alt="Tela de Cadastro Feito" width="300">
       <p><strong>Tela de Cadastro Feito</strong></p>
     </td>
   </tr>
 </table>
+![iphone-12-pro--silver](https://github.com/user-attachments/assets/dea3a019-c710-43d1-9f34-1cb76a9874e5)
 
 ---
+
 
 ## 🖼️ Telas de Formas
 

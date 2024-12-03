@@ -80,13 +80,14 @@ Pré-visualização: Componentes otimizados usando Jetpack Compose.
       <p><strong>Tela das Formas</strong></p>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/eaf30e09-bb07-451a-8b1b-4639013e98a0" alt="Tela Cálculo de Área do Cubóide" width="300">
+      <img src="https://github.com/user-attachments/assets/3edae2a8-7d2b-45af-83e0-20f35f736bc6" alt="Tela Cálculo de Área do Cubóide" width="300">
       <p><strong>Tela Cálculo de Área do Cubóide</strong></p>
     </td>
   </tr>
 </table>
 
 ---
+
 
 
 ## 🤝 Contribuições

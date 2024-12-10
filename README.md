@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2b3e6869-b279-4bc5-af25-4450f4f78e02" width="250" >
+  <p><strong></strong></p>
+</div>
+
+
 # 📐 All the Forms
 
 **All the Forms** é um aplicativo educacional e funcional que permite calcular as áreas de diversas formas geométricas. Ideal para estudantes e profissionais que necessitam de um recurso rápido e eficiente.

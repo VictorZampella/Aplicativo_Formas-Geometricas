@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             FormasproibidasTheme {
-                Inicio()  // Chama a tela inicial da aplicação
+                Inicio()  
             }
         }
     }
@@ -51,7 +51,7 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Inicio() {
-    val navController = rememberNavController()  // Lembra o controlador de navegação
+    val navController = rememberNavController()  
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         content = { innerPadding ->
@@ -138,18 +138,18 @@ fun ConteudoLogin(navController: NavController, innerPadding: PaddingValues) {
 
 @Composable
 fun ConteudoCirculo(navController: NavController) {
-    var nome_completo by remember { mutableStateOf("") }  // Campo de nome
-    var meu_email by remember { mutableStateOf("") }       // Campo de email
-    var minha_senha by remember { mutableStateOf("") }     // Campo de senha
-    var confirmar_senha by remember { mutableStateOf("") } // Campo de confirmação de senha
-    var senhaVisivel by remember { mutableStateOf(false) } // Controla a visibilidade da senha
-    var confirmarSenhaVisivel by remember { mutableStateOf(false) } // Controla a visibilidade da confirmação de senha
+    var nome_completo by remember { mutableStateOf("") }  
+    var meu_email by remember { mutableStateOf("") }       
+    var minha_senha by remember { mutableStateOf("") }    
+    var confirmar_senha by remember { mutableStateOf("") } 
+    var senhaVisivel by remember { mutableStateOf(false) }
+    var confirmarSenhaVisivel by remember { mutableStateOf(false) } 
 
     Column(
         modifier = Modifier
             .background(color = azul)
             .paint(
-                painter = painterResource(R.drawable.group_3),  // Imagem de fundo
+                painter = painterResource(R.drawable.group_3),  
                 contentScale = ContentScale.Crop
             )
             .fillMaxSize(),
@@ -246,7 +246,7 @@ fun ConteudoCirculo(navController: NavController) {
             trailingIcon = {
                 IconButton(onClick = { senhaVisivel = !senhaVisivel }) {
                     Image(
-                        painter = painterResource(R.drawable.eye_open_icon),  // Ícone de olhinho
+                        painter = painterResource(R.drawable.eye_open_icon),  
                         contentDescription = "Mostrar Senha",
                         modifier = Modifier.size(20.dp)
                     )
@@ -336,12 +336,12 @@ fun CadastroEfetuado(navController: NavController) {
                 .fillMaxSize()
                 .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
+         
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -349,7 +349,7 @@ fun CadastroEfetuado(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -389,7 +389,7 @@ fun CadastroEfetuado(navController: NavController) {
                     contentColor = Color.Black
                 )
             ) {
-                Text("Ir para a Tela Inicial")  // Texto dentro do Button
+                Text("Ir para a Tela Inicial") 
             }
 
 
@@ -411,15 +411,15 @@ fun TelaFormas(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
-                .verticalScroll(rememberScrollState()) // Permite rolar a tela verticalmente
+                .padding(start = 34.dp) /
+                .verticalScroll(rememberScrollState()) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
+           
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically 
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -427,7 +427,7 @@ fun TelaFormas(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -439,13 +439,13 @@ fun TelaFormas(navController: NavController) {
                 )
             }
 
-            // Coluna centralizada para os botões
+           
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(top = 150.dp), // Alinha os botões com um espaço do topo
+                    .padding(top = 150.dp), 
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center // Centraliza os botões verticalmente
+                verticalArrangement = Arrangement.Center 
             ) {
                 // Area do Quadrado
                 Button(
@@ -459,11 +459,11 @@ fun TelaFormas(navController: NavController) {
                     )
                 ) {
                     Image(
-                        painter = painterResource(id = R.drawable.square),  //   imagem
+                        painter = painterResource(id = R.drawable.square), 
                         contentDescription = "Ícone de Tela Inicial",
-                        modifier = Modifier.size(24.dp)  // Tamanho da imagem
+                        modifier = Modifier.size(24.dp)  
                     )
-                    Spacer(modifier = Modifier.width(8.dp))  // Espaço entre a imagem e o texto
+                    Spacer(modifier = Modifier.width(8.dp)) 
                     Text("Área do Quadrado")
                 }
 
@@ -613,7 +613,7 @@ fun TelaFormas(navController: NavController) {
 
 @Composable
 fun Calc_Area_Quadrado(navController: NavController) {
-    // Variáveis de estado para o valor do lado e o resultado
+  
     var lado by remember { mutableStateOf("") }
     var resultado by remember { mutableStateOf("") }
 
@@ -629,14 +629,14 @@ fun Calc_Area_Quadrado(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
+                .padding(start = 34.dp) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
+      
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically 
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -644,7 +644,7 @@ fun Calc_Area_Quadrado(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -687,7 +687,7 @@ fun Calc_Area_Quadrado(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada
+                    
                     OutlinedTextField(
                         value = lado,
                         onValueChange = { lado = it },
@@ -698,7 +698,7 @@ fun Calc_Area_Quadrado(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Botão para calcular a área
+                  
                     Button(
                         onClick = {
 
@@ -716,7 +716,7 @@ fun Calc_Area_Quadrado(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Card para exibição do resultado
+                   
                     Card(
                         modifier = Modifier
                             .fillMaxWidth(),
@@ -738,7 +738,7 @@ fun Calc_Area_Quadrado(navController: NavController) {
 
 @Composable
 fun Calc_Area_Triângulo(navController: NavController) {
-    // Variáveis de estado para base, altura e resultado
+   
     var base by remember { mutableStateOf("") }
     var altura by remember { mutableStateOf("") }
     var resultado by remember { mutableStateOf("") }
@@ -755,14 +755,14 @@ fun Calc_Area_Triângulo(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
+                .padding(start = 34.dp) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
+            
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -770,7 +770,7 @@ fun Calc_Area_Triângulo(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -783,13 +783,13 @@ fun Calc_Area_Triângulo(navController: NavController) {
             }
         }
 
-        // Coluna centralizada
+       
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Card para a calculadora
+          
             Card(
                 modifier = Modifier
                     .padding(16.dp)
@@ -813,7 +813,7 @@ fun Calc_Area_Triângulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a base
+                  
                     OutlinedTextField(
                         value = base,
                         onValueChange = { base = it },
@@ -824,7 +824,7 @@ fun Calc_Area_Triângulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a altura
+                
                     OutlinedTextField(
                         value = altura,
                         onValueChange = { altura = it },
@@ -835,7 +835,7 @@ fun Calc_Area_Triângulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Botão para calcular a área
+                  
                     Button(
                         onClick = {
                             val baseDouble = base.toDoubleOrNull()
@@ -853,7 +853,7 @@ fun Calc_Area_Triângulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Card para exibição do resultado
+               
                     Card(
                         modifier = Modifier
                             .fillMaxWidth(),
@@ -876,7 +876,7 @@ fun Calc_Area_Triângulo(navController: NavController) {
 
 @Composable
 fun Calc_Area_Circulo(navController: NavController) {
-    // Variáveis de estado para o raio e o resultado
+  
     var raio by remember { mutableStateOf("") }
     var resultado by remember { mutableStateOf("") }
 
@@ -892,14 +892,14 @@ fun Calc_Area_Circulo(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
+                .padding(start = 34.dp) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
+          
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically 
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -907,7 +907,7 @@ fun Calc_Area_Circulo(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -920,7 +920,7 @@ fun Calc_Area_Circulo(navController: NavController) {
             }
         }
 
-        // Coluna centralizada
+       
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
@@ -950,7 +950,7 @@ fun Calc_Area_Circulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para o raio
+                   
                     OutlinedTextField(
                         value = raio,
                         onValueChange = { raio = it },
@@ -961,7 +961,7 @@ fun Calc_Area_Circulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Botão para calcular a área
+                 
                     Button(
                         onClick = {
                             val raioDouble = raio.toDoubleOrNull()
@@ -979,7 +979,7 @@ fun Calc_Area_Circulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Card para exibição do resultado
+             
                     Card(
                         modifier = Modifier
                             .fillMaxWidth(),
@@ -1000,7 +1000,7 @@ fun Calc_Area_Circulo(navController: NavController) {
 
 @Composable
 fun Calc_Area_Losango(navController: NavController) {
-    // Variáveis de estado para as diagonais e o resultado
+    
     var diagonal1 by remember { mutableStateOf("") }
     var diagonal2 by remember { mutableStateOf("") }
     var resultado by remember { mutableStateOf("") }
@@ -1017,14 +1017,14 @@ fun Calc_Area_Losango(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
+                .padding(start = 34.dp) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
+       
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically 
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -1032,7 +1032,7 @@ fun Calc_Area_Losango(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -1045,13 +1045,13 @@ fun Calc_Area_Losango(navController: NavController) {
             }
         }
 
-        // Coluna centralizada
+  
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Card para a calculadora
+          
             Card(
                 modifier = Modifier
                     .padding(16.dp)
@@ -1075,7 +1075,7 @@ fun Calc_Area_Losango(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a primeira diagonal
+                  
                     OutlinedTextField(
                         value = diagonal1,
                         onValueChange = { diagonal1 = it },
@@ -1086,7 +1086,7 @@ fun Calc_Area_Losango(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a segunda diagonal
+                 
                     OutlinedTextField(
                         value = diagonal2,
                         onValueChange = { diagonal2 = it },
@@ -1097,7 +1097,6 @@ fun Calc_Area_Losango(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Botão para calcular a área
                     Button(
                         onClick = {
                             val d1 = diagonal1.toDoubleOrNull()
@@ -1115,7 +1114,7 @@ fun Calc_Area_Losango(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Card para exibição do resultado
+                  
                     Card(
                         modifier = Modifier
                             .fillMaxWidth(),
@@ -1136,7 +1135,6 @@ fun Calc_Area_Losango(navController: NavController) {
 
 @Composable
 fun Calc_Area_Cubo(navController: NavController) {
-    // Variáveis de estado para a aresta e o resultado
     var aresta by remember { mutableStateOf("") }
     var resultado by remember { mutableStateOf("") }
 
@@ -1152,14 +1150,13 @@ fun Calc_Area_Cubo(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
+                .padding(start = 34.dp) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp))
 
-            // Row para organizar imagem e texto lado a lado
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically 
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -1167,7 +1164,7 @@ fun Calc_Area_Cubo(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -1180,13 +1177,11 @@ fun Calc_Area_Cubo(navController: NavController) {
             }
         }
 
-        // Coluna centralizada
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Card para a calculadora
             Card(
                 modifier = Modifier
                     .padding(16.dp)
@@ -1210,7 +1205,6 @@ fun Calc_Area_Cubo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a aresta
                     OutlinedTextField(
                         value = aresta,
                         onValueChange = { aresta = it },
@@ -1221,7 +1215,6 @@ fun Calc_Area_Cubo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Botão para calcular a área
                     Button(
                         onClick = {
                             val arestaDouble = aresta.toDoubleOrNull()
@@ -1239,7 +1232,6 @@ fun Calc_Area_Cubo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Card para exibição do resultado
                     Card(
                         modifier = Modifier
                             .fillMaxWidth(),
@@ -1260,7 +1252,6 @@ fun Calc_Area_Cubo(navController: NavController) {
 
 @Composable
 fun Calc_Area_Paralelogramo(navController: NavController) {
-    // Variáveis de estado para a base, altura e o resultado
     var base by remember { mutableStateOf("") }
     var altura by remember { mutableStateOf("") }
     var resultado by remember { mutableStateOf("") }
@@ -1277,14 +1268,14 @@ fun Calc_Area_Paralelogramo(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
+                .padding(start = 34.dp) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
+
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically 
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -1292,7 +1283,7 @@ fun Calc_Area_Paralelogramo(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -1305,13 +1296,12 @@ fun Calc_Area_Paralelogramo(navController: NavController) {
             }
         }
 
-        // Coluna centralizada
+    
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Card para a calculadora
             Card(
                 modifier = Modifier
                     .padding(16.dp)
@@ -1335,7 +1325,6 @@ fun Calc_Area_Paralelogramo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a base
                     OutlinedTextField(
                         value = base,
                         onValueChange = { base = it },
@@ -1346,7 +1335,6 @@ fun Calc_Area_Paralelogramo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a altura
                     OutlinedTextField(
                         value = altura,
                         onValueChange = { altura = it },
@@ -1357,7 +1345,6 @@ fun Calc_Area_Paralelogramo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Botão para calcular a área
                     Button(
                         onClick = {
                             val baseDouble = base.toDoubleOrNull()
@@ -1376,7 +1363,6 @@ fun Calc_Area_Paralelogramo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Card para exibição do resultado
                     Card(
                         modifier = Modifier
                             .fillMaxWidth(),
@@ -1397,7 +1383,6 @@ fun Calc_Area_Paralelogramo(navController: NavController) {
 
 @Composable
 fun Calc_Area_Retangulo(navController: NavController) {
-    // Variáveis de estado para a base, altura e o resultado
     var base by remember { mutableStateOf("") }
     var altura by remember { mutableStateOf("") }
     var resultado by remember { mutableStateOf("") }
@@ -1414,14 +1399,13 @@ fun Calc_Area_Retangulo(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
+                .padding(start = 34.dp) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically 
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -1429,7 +1413,7 @@ fun Calc_Area_Retangulo(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -1442,13 +1426,11 @@ fun Calc_Area_Retangulo(navController: NavController) {
             }
         }
 
-        // Coluna centralizada
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            // Card para a calculadora
             Card(
                 modifier = Modifier
                     .padding(16.dp)
@@ -1472,7 +1454,6 @@ fun Calc_Area_Retangulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a base
                     OutlinedTextField(
                         value = base,
                         onValueChange = { base = it },
@@ -1483,7 +1464,6 @@ fun Calc_Area_Retangulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a altura
                     OutlinedTextField(
                         value = altura,
                         onValueChange = { altura = it },
@@ -1494,7 +1474,6 @@ fun Calc_Area_Retangulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Botão para calcular a área
                     Button(
                         onClick = {
                             val baseDouble = base.toDoubleOrNull()
@@ -1513,7 +1492,6 @@ fun Calc_Area_Retangulo(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Card para exibição do resultado
                     Card(
                         modifier = Modifier
                             .fillMaxWidth(),
@@ -1534,7 +1512,6 @@ fun Calc_Area_Retangulo(navController: NavController) {
 
 @Composable
 fun Calc_Area_Cuboide(navController: NavController) {
-    // Variáveis de estado para os valores de comprimento, largura, altura e o resultado
     var comprimento by remember { mutableStateOf("") }
     var largura by remember { mutableStateOf("") }
     var altura by remember { mutableStateOf("") }
@@ -1552,14 +1529,13 @@ fun Calc_Area_Cuboide(navController: NavController) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(start = 34.dp) // Margem lateral para alinhar à esquerda
+                .padding(start = 34.dp) 
         ) {
-            Spacer(modifier = Modifier.height(80.dp)) // Ajuste a altura para descer a imagem
+            Spacer(modifier = Modifier.height(80.dp)) 
 
-            // Row para organizar imagem e texto lado a lado
             Row(
                 modifier = Modifier.fillMaxWidth(),
-                verticalAlignment = Alignment.CenterVertically // Alinha o texto com a imagem
+                verticalAlignment = Alignment.CenterVertically
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.ativo_1_1),
@@ -1567,7 +1543,7 @@ fun Calc_Area_Cuboide(navController: NavController) {
                     modifier = Modifier.size(width = 65.dp, height = 65.dp)
                 )
 
-                Spacer(modifier = Modifier.width(16.dp)) // Espaço entre a imagem e o texto
+                Spacer(modifier = Modifier.width(16.dp)) 
 
                 Text(
                     text = "All The Forms",
@@ -1580,7 +1556,7 @@ fun Calc_Area_Cuboide(navController: NavController) {
             }
         }
 
-        // Coluna centralizada
+       
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Center,
@@ -1610,7 +1586,6 @@ fun Calc_Area_Cuboide(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para o comprimento
                     OutlinedTextField(
                         value = comprimento,
                         onValueChange = { comprimento = it },
@@ -1621,7 +1596,6 @@ fun Calc_Area_Cuboide(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a largura
                     OutlinedTextField(
                         value = largura,
                         onValueChange = { largura = it },
@@ -1632,7 +1606,6 @@ fun Calc_Area_Cuboide(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Campo de entrada para a altura
                     OutlinedTextField(
                         value = altura,
                         onValueChange = { altura = it },
@@ -1643,7 +1616,6 @@ fun Calc_Area_Cuboide(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Botão para calcular a área
                     Button(
                         onClick = {
                             val comprimentoDouble = comprimento.toDoubleOrNull()
@@ -1664,7 +1636,6 @@ fun Calc_Area_Cuboide(navController: NavController) {
 
                     Spacer(modifier = Modifier.height(16.dp))
 
-                    // Card para exibição do resultado
                     Card(
                         modifier = Modifier
                             .fillMaxWidth(),
